@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <style>
+        h1{ color:white;
+            text-shadow: royalblue 10px 15px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        
+        <div class="top nav">
+            <nav>
+                <a href="index.html"><font color="red">Home</font></a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Products.html">Products</a>
+                <a href="Contact.html">Contact</a>
+            </nav>  
+        </div>
+        <h1>"NRM RealEstate"</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 11</div>
+              <img src="01.jpg" width="1480" height="650">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 11</div>
+              <img src="02.jpg" width="1480" height="650">
+              </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 11</div>
+              <img src="03.jpg" width="1480" height="650">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 11</div>
+              <img src=" 04.jpg" width="1480" height="650">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 11</div>
+              <img src="05.jpg" width="1480" height="650">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 11</div>
+              <img src="06.jpg" width="1480" height="650">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 11</div>
+                <img src="07.jpg" width="1480" height="650">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">8 / 11</div>
+                <img src="08.jpg" width="1480" height="650">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">9 / 11</div>
+                <img src="09.jpg" width="1480" height="650">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">10 / 11</div>
+                <img src="10.jpg" width="1480" height="650">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">11 / 11</div>
+                <img src="11.jpg" width="1480" height="650">
+              </div>
+            
+            
+            </div>
+        <br>
+        <!---->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+
+          </div>
+          <!--to -->
+          <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2.5 seconds
+            }
+            </script>
+        <footer>Copyright 2021</footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

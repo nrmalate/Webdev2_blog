@@ -1,0 +1,18 @@
+
+a{
+    color: white;
+   
+}
+.top nav{
+    
+    padding:20px;
+    text-align: right;
+}
+footer{
+    text-align:center;
+    color:white;
+}
+body{
+    background-image:url(background.jpg);
+    background-size: 1600px;
+}
